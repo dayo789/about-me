@@ -6,6 +6,7 @@ let visitorName = prompt('What is your name?');
 
 alert(`Welcome to my site ${visitorName}! Please guess yes or no to the following questions.`);
 
+function questionOne(){
 let question0neGuess = prompt('Do you think I like to Travel?').toLocaleLowerCase();
 
 if(question0neGuess === 'y' || question0neGuess === 'yes'){
@@ -13,7 +14,9 @@ alert('You are correct!');
 } else if( question0neGuess === 'n' || question0neGuess === 'no'){
 alert('Sorry, you are wrong!');
 }
+}
 
+function questionTwo(){
 let questionTwoGuess = prompt('Do you think I like Pizza?').toLocaleLowerCase();
 
 if(questionTwoGuess === 'n' || questionTwoGuess === 'no'){
@@ -21,7 +24,8 @@ alert('You are correct!');
 } else if( questionTwoGuess === 'y' || questionTwoGuess === 'yes'){
 alert('No, but good try!');
 }
-
+}
+function questionThree(){
 let questionThreeGuess = prompt('Do you think I am the only child?').toLocaleLowerCase();
 
 if(questionThreeGuess === 'n' || questionThreeGuess === 'no'){
@@ -29,7 +33,9 @@ alert('You are correct!');
 } else if( questionThreeGuess === 'y' || questionThreeGuess === 'yes'){
 alert('Sorry, maybe in another dimension!');
 }
+}
 
+function questionFour(){
 let questionFourGuess = prompt('Do you think I am Nigerian?').toLocaleLowerCase();
 
 if(questionFourGuess === 'y' || questionFourGuess === 'yes'){
@@ -37,8 +43,9 @@ alert('Great guess!');
 } else if( questionFourGuess === 'n' || questionFourGuess === 'no'){
 alert('Sorry, I am full blooded Nigerian!');
 }
+}
 
-
+function questionFive(){
 let questionFiveGuess = prompt('Do you think I like rap music?').toLocaleLowerCase();
 
 if(questionFiveGuess === 'y' || questionFiveGuess === 'yes'){
@@ -46,9 +53,10 @@ alert('You are correct!, I listen to rap music everyday!');
 } else if( questionFiveGuess === 'n' || questionFiveGuess === 'no'){
 alert('Sorry, its my jam!');
 }
-
+}
 
 //Guessinng Game 
+function questionSix(){
 let attempts = 4;
 let myNum = 6;
 
@@ -70,9 +78,10 @@ while(attempts>0){
     alert (`The correct answer was ${myNum}`);
   }
 }
-
+}
 
 //Top 10 Destinations
+function questionSeven(){
 let destinations =['Mexico','Texas','New York','Jamaica','California','London','Toronto','Paris'];
 let attempts2 = 6;
 
@@ -80,7 +89,7 @@ for(let i = 0; i < 6; i++){
   let myGuess = prompt('Guess my favorite countries!').toLocaleLowerCase();
 for(let j = 0; j < destinations.length; j++){
   if (myGuess === destinations[j]){
-    alert ('Nice! You must be a code reader!');
+        alert ('Nice! You must be a code reader!');
     i = 6;
     break;
   }
@@ -88,6 +97,15 @@ for(let j = 0; j < destinations.length; j++){
  };
 
  alert ('These are my favorite countries Mexico, Texas, New York, Jamaica, California, London, Toronto,Paris');
+}
+
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
 
 
 
