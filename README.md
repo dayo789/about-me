@@ -12,3 +12,5 @@
 
 ### Reflections and Comments
 help from: Elias and ZOe
+Driver: Monica Ramirez; declared function using existing loops,invoked functions
+Navigator: Dayo Akin
