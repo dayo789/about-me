@@ -65,6 +65,10 @@ while(attempts>0){
     alert('Wow! Great guess!');
     break;
   }
+    attempts--;
+  if (attempts === 0){
+    alert (`The correct answer was ${myNum}`);
+  }
 }
 
 
@@ -72,24 +76,18 @@ while(attempts>0){
 let destinations =['Mexico','Texas','New York','Jamaica','California','London','Toronto','Paris'];
 let attempts2 = 6;
 
-for(let i = 0; i < destinations.length; i++){
-  let myGuess = parseInt (prompt('Guess my favorite country!'));
+for(let i = 0; i < 6; i++){
+  let myGuess = prompt('Guess my favorite countries!').toLocaleLowerCase();
+for(let j = 0; j < destinations.length; j++){
+  if (myGuess === destinations[j]){
+    alert ('Nice! You must be a code reader!');
+    i = 6;
+    break;
+  }
+}
+ };
 
-  if (destinations[i] === 'Mexico'){
-    alert (`Nice! You must be a code reader!`);
-    attempts2--;
-  } else if (
-  console. log(`${destinations[i]}`))
-  alert('No,thats not it!'); 
-  attempts2--;
-  break;
-};
-
-
-
-
-
-
+ alert ('These are my favorite countries Mexico, Texas, New York, Jamaica, California, London, Toronto,Paris');
 
 
 
