@@ -47,4 +47,63 @@ alert('You are correct!, I listen to rap music everyday!');
 alert('Sorry, its my jam!');
 }
 
+
+//Guessinng Game 
+let attempts = 4;
+let myNum = 6;
+
+while(attempts>0){
+  let userGuess = parseInt (prompt('Guess how many countries I have traveled to!'));
+
+  if(userGuess < myNum){
+    alert('That was too low...Try Again!');
+    attempts--;
+  }  else if (userGuess > myNum){
+    alert('That was too high...Try Again!');
+    attempts--;
+  } else if (userGuess === myNum){
+    alert('Wow! Great guess!');
+    break;
+  }
+}
+
+
+//Top 10 Destinations
+let destinations =['Mexico','Texas','New York','Jamaica','California','London','Toronto','Paris'];
+let attempts2 = 6;
+
+for(let i = 0; i < destinations.length; i++){
+  let myGuess = parseInt (prompt('Guess my favorite country!'));
+
+  if (destinations[i] === 'Mexico'){
+    alert (`Nice! You must be a code reader!`);
+    attempts2--;
+  } else if (
+  console. log(`${destinations[i]}`))
+  alert('No,thats not it!'); 
+  attempts2--;
+  break;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 alert(`Thanks for playing ${visitorName}!`);
