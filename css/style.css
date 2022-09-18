@@ -6,9 +6,14 @@ h1 {
   font-size: 3vw;
   text-align: center;
   text-transform: uppercase;
-  color: #4CAF50;
+  color: orange;
 }
-
+h2 {
+  font-size: 2vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
 ul {
   list-style-type: circle;
   border: 15px solid green;
@@ -19,14 +24,26 @@ ol{
   list-style-type: circle;
   border: 15px solid green;
   padding: 50px;
+  color: tomato;
 }
 
 
 div {
-  margin: auto;
-  width: 50%;
   padding: 10px;
 }
 
+img {
+  height: 350px;
+  width: 350x;
+  margin-right: 800px;
+}
 
+figure {
+  align-content: left;
+  align-items: center;
+}
 
+figcaption {
+  background-color: purple;
+  max-width: 530px;
+}

@@ -75,17 +75,22 @@ while(attempts>0){
 //Top 10 Destinations
 let destinations =['Mexico','Texas','New York','Jamaica','California','London','Toronto','Paris'];
 let attempts2 = 6;
+let correct = false;
 
-for(let i = 0; i < 6; i++){
-  let myGuess = prompt('Guess my favorite countries!').toLocaleLowerCase();
-for(let j = 0; j < destinations.length; j++){
+for (let i = 0; i < attempts2; i++) {
+  let myGuess = prompt('Guess my favorite countries!').toLowerCase;
+for (let j = 0; j < destinations.length; j++){
   if (myGuess === destinations[j]){
     alert ('Nice! You must be a code reader!');
-    i = 6;
+    correct = true;  
+    score++;
     break;
   }
 }
- };
+if (correct === true) {
+    break;
+  }
+ }
 
  alert ('These are my favorite countries Mexico, Texas, New York, Jamaica, California, London, Toronto,Paris');
 
